@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satish's Portfolio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d0d0d;
+            color: white;
+            margin: 0;
+            display: flex;
+            overflow-x: hidden;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #1e90ff;
+            padding: 20px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: slideInLeft 1s ease-in-out;
+        }
+        .sidebar h2 {
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 10px 0;
+            display: block;
+            transition: transform 0.3s, opacity 0.3s;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+        .sidebar a:hover {
+            transform: scale(1.1);
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .section {
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #222;
+            border-radius: 15px;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+        .section:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Satish</h2>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#coding">Coding</a>
+        <a href="#contact">Contact</a>
+    </div>
+    
+    <div class="main-content">
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <p>Pega CDH, Java, Python, React, Kafka, DevOps, Machine Learning</p>
+            <p>Databases: MySQL, Oracle, PostgreSQL</p>
+            <p>Tools: Git, Jira</p>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Pega-Google Sheets Integration, CDH Campaign Automation</p>
+            <p>Diabetes Prediction using Machine Learning</p>
+            <p>DBMS Learning Hackathon - Library Management System</p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Work Experience</h2>
+            <p><strong>Senior Pega Developer - TCS (Oct 2022 - Present)</strong></p>
+            <ul>
+                <li>Designed and developed scalable Pega applications for banking and data management.</li>
+                <li>Integrated external systems using Connect SOAP, REST, and SQL.</li>
+                <li>Implemented CI/CD pipelines to automate deployments, ensuring smooth releases.</li>
+                <li>Configured and managed Pega BIX extractions for reporting and data insights.</li>
+                <li>Optimized Pega cloud applications for performance tuning and reliability.</li>
+                <li>Recognized with <strong>TCS On The Spot Award</strong> for outstanding contribution.</li>
+            </ul>
+            <p><strong>Pega Developer - BDI PLUS (Oct 2021 - Sept 2022)</strong></p>
+            <ul>
+                <li>Developed and enhanced Pega applications with a focus on business rules and case management.</li>
+                <li>Collaborated with clients to gather and refine business requirements.</li>
+                <li>Created Reports (Report Definitions) and automated processes with Agents, Data Transforms, and Declarative Rules.</li>
+                <li>Conducted unit testing using Tracer and Clipboard, improving system quality.</li>
+            </ul>
+        </section>
+
+        <section id="coding" class="section">
+            <h2>Coding</h2>
+            <p>LeetCode: Solving DSA problems in Python - <a href="https://leetcode.com/u/satish_h/" style="color:#1e90ff; text-decoration: none;">Profile</a></p>
+            <p>GitHub: Working on Pega integrations and automation - <a href="https://github.com/satish11111" style="color:#1e90ff; text-decoration: none;">GitHub</a></p>
+            <p>Pega PDN ID: PEGA097373</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:satish7981472250@gmail.com" style="color:#1e90ff; text-decoration: none;">satish7981472250@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/satish-h-a27a7a160/" style="color:#1e90ff; text-decoration: none;">Profile</a></p>
+        </section>
+    </div>
+</body>
+</html>
