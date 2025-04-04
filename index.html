@@ -8,48 +8,81 @@
     
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            margin: 0;
+            padding: 0;
         }
         .container {
             width: 90%;
             max-width: 500px;
-            background: white;
-            padding: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
             margin: 50px auto;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+            backdrop-filter: blur(20px);
+            animation: fadeIn 1s ease-in-out;
         }
         .profile-pic {
-            width: 100px;
-            height: 100px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            border: 5px solid #fff;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-pic:hover {
+            transform: scale(1.1);
         }
         .name {
-            font-size: 24px;
+            font-size: 32px;
             font-weight: bold;
+            color: #fff;
         }
         .title {
-            color: gray;
+            font-size: 20px;
             margin-bottom: 20px;
+            font-style: italic;
         }
-        .links a {
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .grid-container a, .certifications a {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            background: #0073b1;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.2);
             color: white;
             text-decoration: none;
-            padding: 10px;
-            margin: 5px;
-            border-radius: 5px;
-            transition: background 0.3s;
+            padding: 14px;
+            border-radius: 12px;
+            transition: all 0.3s ease-in-out;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            margin: 5px 0;
         }
-        .links a:hover {
-            background: #005582;
+        .grid-container a:hover, .certifications a:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+        }
+        h2 {
+            font-size: 24px;
+            color: #fff;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -58,13 +91,20 @@
         <img class="profile-pic" src="https://raw.githubusercontent.com/satish11111/portfolio/main/SAVE_20200817_094017.jpg" alt="Satish">
         <div class="name">Satish</div>
         <div class="title">Aspiring SDE | Pega Developer | Java Developer</div>
-        <div class="links">
+    
+        <div class="grid-container">
             <a href="https://github.com/satish11111" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             <a href="https://leetcode.com/u/satish_h/" target="_blank"><i class="fas fa-code"></i> LeetCode</a>
             <a href="https://www.linkedin.com/in/satishpega/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://wa.me/917981472250" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
             <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
             <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+
+        <div class="certifications">
+            <h2>Certifications</h2>
+            <a href="https://www.credly.com/users/satish-h/edit">🎓 Pega Certifications - Credly</a>
+            <a href="https://accounts.pega.com/profile/satishh9">🔗 Pega Profile</a>
         </div>
     </div>
 </body>
