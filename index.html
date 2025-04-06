@@ -26,6 +26,15 @@
             backdrop-filter: blur(20px);
             animation: fadeIn 1s ease-in-out;
         }
+        .about-short {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 16px;
+            border-radius: 15px;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            text-align: left;
+        }
         .profile-pic {
             width: 140px;
             height: 140px;
@@ -53,7 +62,7 @@
             gap: 12px;
             margin-top: 12px;
         }
-        .grid-container a, .certifications a {
+        .grid-container a {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -67,9 +76,8 @@
             font-size: 18px;
             font-weight: bold;
             box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-            margin: 5px 0;
         }
-        .grid-container a:hover, .certifications a:hover {
+        .grid-container a:hover {
             transform: scale(1.1);
             background: rgba(255, 255, 255, 0.3);
             box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
@@ -80,6 +88,9 @@
             margin-top: 20px;
             text-transform: uppercase;
         }
+        .certifications {
+            margin-top: 25px;
+        }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -88,24 +99,32 @@
 </head>
 <body>
     <div class="container">
+    
         <img class="profile-pic" src="https://raw.githubusercontent.com/satish11111/portfolio/main/SAVE_20200817_094017.jpg" alt="Satish">
         <div class="name">Satish</div>
         <div class="title">Aspiring SDE | Pega Developer | Java Developer</div>
     
+        <div class="about-short">
+            <strong>Hello! I'm Satish.</strong><br>
+            Pega Developer with 3.5+ years of experience including 1.5+ in CDH. Passionate about real-time 1:1 customer engagement, decisioning, and continuous upskilling in DevOps, AI, and system design. Preparing for Pega LSA.
+        </div>
+
+        <div class="about-short">
+            <strong>Also experienced in Java Development.</strong><br>
+            Skilled in Core Java, Spring Boot, REST APIs, and backend development. I enjoy building scalable applications, solving real-world problems with clean code, and continuously learning to stay up to date with the latest tech trends.
+        </div>
+
+
+
         <div class="grid-container">
             <a href="https://github.com/satish11111" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             <a href="https://leetcode.com/u/satish_h/" target="_blank"><i class="fas fa-code"></i> LeetCode</a>
             <a href="https://www.linkedin.com/in/satishpega/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://wa.me/917981472250" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
             <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://accounts.pega.com/profile/satishh9" target="_blank"><i class="fas fa-user-circle"></i> Pega Profile</a>
         </div>
 
-        <div class="certifications">
-            <h2>Certifications</h2>
-            <a href="https://www.credly.com/users/satish-h/edit">🎓 Pega Certifications - Credly</a>
-            <a href="https://accounts.pega.com/profile/satishh9">🔗 Pega Profile</a>
-        </div>
     </div>
 </body>
 </html>
