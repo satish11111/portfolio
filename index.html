@@ -91,6 +91,24 @@
         .certifications {
             margin-top: 25px;
         }
+        .resume-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin-top: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        .resume-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -99,11 +117,11 @@
 </head>
 <body>
     <div class="container">
-    
+        
         <img class="profile-pic" src="https://raw.githubusercontent.com/satish11111/portfolio/main/SAVE_20200817_094017.jpg" alt="Satish">
         <div class="name">Satish</div>
         <div class="title">Aspiring SDE | Pega Developer | Java Developer</div>
-    
+
         <div class="about-short">
             <strong>Hello! I'm Satish.</strong><br>
             Pega Developer with 3.5+ years of experience including 1.5+ in CDH. Passionate about real-time 1:1 customer engagement, decisioning, and continuous upskilling in DevOps, AI, and system design. Preparing for Pega LSA.
@@ -115,6 +133,9 @@
         </div>
 
 
+        <a href="https://raw.githubusercontent.com/satish11111/portfolio/main/satish_pega_3_6.pdf" target="_blank" class="resume-link">
+            <i class="fas fa-file-alt"></i> View Resume
+        </a>
 
         <div class="grid-container">
             <a href="https://github.com/satish11111" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -122,14 +143,8 @@
             <a href="https://www.linkedin.com/in/satishpega/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://wa.me/917981472250" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
             <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://raw.githubusercontent.com/satish11111/portfolio/main/satish_pega_3_6.pdf" target="_blank"
-   style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.2); color: white; text-decoration: none; padding: 12px 20px; margin-top: 15px; border-radius: 10px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: all 0.3s ease-in-out;">
-   <i class="fas fa-file-download"></i> Resume
-</a>
-
             <a href="https://accounts.pega.com/profile/satishh9" target="_blank"><i class="fas fa-user-circle"></i> Pega Profile</a>
         </div>
-
     </div>
 </body>
 </html>
